@@ -44,7 +44,7 @@ function swarm_offer_shortcode( $atts ) {
     $organization_id = $atts['organization'];
     $offering_id = $atts['offering'];
 
-    $api_url = "https://dev.api.swarmplus.ca/organization/$organization_id/offering/$offering_id";
+    $api_url = "https://api.swarmplus.ca/organization/$organization_id/offering/$offering_id";
 
     $response = wp_remote_get( $api_url );
 
